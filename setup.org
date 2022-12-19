@@ -7,7 +7,7 @@
   So I guess if you apply this /emacs/ configuration to be your own configuration as a basis, then it should work.
 
 * general tweaks
-
+  
   #+begin_src emacs-lisp
   (toggle-frame-maximized)
 
@@ -289,8 +289,6 @@
 * key-bindings
 
   #+begin_src emacs-lisp
-  ;; treemacs
-  (global-set-key (kbd "C-c l") 'treemacs)
 
   ;;eshell
   ;;(global-set-key (kbd "c-c s") 'eshell)
@@ -357,6 +355,10 @@
   (global-set-key "\C-s" 'swiper)
 					  ; (global-set-key (kbd "<f6>") 'ivy-resume)
   (global-set-key (kbd "<f1>") 'vterm)
+
+  ;; treemacs
+  (global-set-key (kbd "<f2>") 'treemacs)
+
   ;; (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
   ;; (global-set-key (kbd "<f1> l") 'counsel-load-library)
   ;; (global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
@@ -382,6 +384,7 @@
 
   ;; magit
   (global-set-key (kbd "C-x g") 'magit-status)
+  (global-set-key (kbd "<f3>") 'magit-commit)
   (global-set-key (kbd "C-x p") 'magit-push)
 
   ;; focus inmediately on new split window
