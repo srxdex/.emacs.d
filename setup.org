@@ -357,7 +357,8 @@
   (global-set-key (kbd "<f1>") 'vterm)
 
   ;; treemacs
-  (global-set-key (kbd "<f2>") 'treemacs)
+    (global-set-key (kbd "<f2>") 'treemacs)
+    
 
   ;; (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
   ;; (global-set-key (kbd "<f1> l") 'counsel-load-library)
@@ -392,9 +393,12 @@
   (global-set-key "\C-x3" (lambda () (interactive)(split-window-horizontally) (other-window 1)))
 
   ;; recentf
-  (global-set-key (kbd "C-. r") 'recentf-open-files)
+  (global-set-key (kbd "C-. r") 'recentf-open-files) 
+
 
   #+END_SRC
+
+
 
 * Org mode stuff
   
